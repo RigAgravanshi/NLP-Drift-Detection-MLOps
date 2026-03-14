@@ -1,0 +1,21 @@
+model:
+  classifier_name: "bert-base-uncased"
+  num_classes: 77
+  max_length: 128
+
+paths:
+  tokenizer_path: "saved_model/tokenizer"
+  model_path: "saved_model/bert_intent_classifier.pt"
+  label_names_path: "saved_model/label_names.json"
+  reference_data_path: "data/reference"
+  production_data_path: "data/production"
+  inference_logs_path: "data/inference_logs"
+
+
+training:
+  batch_size: 16
+  epochs: 8
+  lr: 2e-5
+
+
+
