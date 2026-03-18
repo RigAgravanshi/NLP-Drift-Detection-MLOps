@@ -212,3 +212,6 @@ data/reference/
 data/production/
 data/inference_logs/
 mlruns/
+
+# Drift reports
+reports/*.html
