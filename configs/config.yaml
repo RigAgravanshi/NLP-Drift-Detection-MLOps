@@ -17,3 +17,7 @@ training:
   batch_size: 16
   epochs: 8
   lr: 2e-5
+
+monitoring:
+  text_drift_threshold: 0.5
+  label_drift_threshold: 0.15
