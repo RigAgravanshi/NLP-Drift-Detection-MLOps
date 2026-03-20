@@ -1,9 +1,11 @@
 import yaml
 import logging
+from src.utils.logger import get_logger
 
 def check_drift(drift_score, threshold, column_name):
     if drift_score > threshold :
-        logging.warning(f"Drift detected on '{column_name}' column. Score: {drift_score:.4f}, Threshold: {threshold}")    
+        logger = get_logger(__name__)
+        logger.warning(f"Drift detected on '{column_name}' column. Score: {drift_score:.4f}, Threshold: {threshold}")
         return True
     else: return False
 
