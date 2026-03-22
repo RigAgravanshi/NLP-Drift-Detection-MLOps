@@ -10,7 +10,7 @@ paths:
 
   reference_data_path: "data/reference/train_df.csv"
   production_data_path: "data/production/test_df.csv"
-  
+
   production_data_concept_path: "data/production/concept_drift.parquet"
   production_data_data_path: "data/production/data_drift.parquet"
   production_data_label_path: "data/production/label_drift.parquet"
