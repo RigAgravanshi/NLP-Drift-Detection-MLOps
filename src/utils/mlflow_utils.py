@@ -1,5 +1,7 @@
 import mlflow
 
+mlflow.set_tracking_uri("sqlite:///mlflow.db")
+
 def start_run(experiment_name, run_name):
     mlflow.set_experiment(experiment_name = experiment_name)
     return mlflow.start_run(run_name = run_name)
