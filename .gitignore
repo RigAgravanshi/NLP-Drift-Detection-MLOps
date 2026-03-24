@@ -212,6 +212,7 @@ data/reference/*.csv
 data/production/*.parquet
 data/production/*.csv
 data/inference_logs/*.csv
+
 mlruns/
 mlflow.db
 
